@@ -1,0 +1,9 @@
+*{
+	padding: 0;
+}
+.b-info,.info{
+	font-weight:bold;
+}
+p{
+	line-height: 8px;
+}
