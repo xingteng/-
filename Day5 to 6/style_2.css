@@ -1,0 +1,26 @@
+
+h1{
+    width: 6% ;
+    height: 420px;
+    padding: 50px;
+    margin: 0px;
+    text-align: center;
+    background-color: #227788;
+	float: left;
+	color: white;
+}
+div{
+	text-indent: 20px;
+}
+span{
+	text-indent: 20px;
+}
+.info{
+	font-weight:bold;
+	text-indent: 20px;
+	width: 90%;
+	padding: 0;
+}
+p{
+	line-height: 8px;
+}
