@@ -1,6 +1,7 @@
-
-h1{
-    width: 6% ;
+/*选择器 与 { 之间必须包含空格。*/
+/*属性名 与之后的 : 之间不允许包含空格， : 与 属性值 之间必须包含空格 */
+h1 {
+    width: 7% ;
     height: 420px;
     padding: 50px;
     margin: 0px;
@@ -9,18 +10,18 @@ h1{
 	float: left;
 	color: white;
 }
-div{
+div {
 	text-indent: 20px;
 }
-span{
+span {
 	text-indent: 20px;
 }
-.info{
-	font-weight:bold;
+.info {
+	font-weight: bold;
 	text-indent: 20px;
 	width: 90%;
 	padding: 0;
 }
-p{
+p {
 	line-height: 8px;
 }

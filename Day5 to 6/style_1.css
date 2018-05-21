@@ -1,9 +1,13 @@
-*{
+/*选择器 与 { 之间必须包含空格 */
+/*属性名 与之后的 : 之间不允许包含空格， : 与 属性值 之间必须包含空格 */
+* {
 	padding: 0;
 }
-.b-info,.info{
-	font-weight:bold;
+/* 当一个 rule 包含多个 selector 时，每个选择器声明必须独占一行*/
+.b-info, 
+.info {
+	font-weight: bold;
 }
-p{
+p {
 	line-height: 8px;
 }

@@ -1,7 +1,9 @@
-*{
+/*选择器 与 { 之间必须包含空格 */
+/*属性名 与之后的 : 之间不允许包含空格， : 与 属性值 之间必须包含空格 */
+* {
 	padding: 0;
 }
-h1{
+h1 {
     width: 90% ;
     height: 30px;
     padding: 20px;
@@ -11,10 +13,10 @@ h1{
 	float: top;
 	color: white;
 }
-.column{
+.column {
 	display: inline-block;
 	background-color: #aaa;
-	height:100px;
+	height: 100px;
 	width: 20%;
 	text-align: center;
 
@@ -24,7 +26,7 @@ h1{
 	float: left;
 
 }
-.row{
+.row {
 	display: inline-block;
 
 	width: 80%;
@@ -33,14 +35,12 @@ h1{
 	border-bottom: 1px solid #aaa;
 }
 
-	 
-}
-.b-info{
+.b-info {
 	font-weight:bold;
 }
-.info{
+.info {
 	font-weight:bold;
 }
-p{
+p {
 	line-height: 8px;
 }
