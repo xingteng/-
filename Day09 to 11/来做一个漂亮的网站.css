@@ -1,0 +1,338 @@
+* {
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+.header {
+	margin-bottom: 0;
+	margin-right: 0;
+}
+.header h1 {
+	color: white;
+	text-align: center;
+	padding: 0;
+	position: absolute;
+	bottom: 540px;
+	left: 43%;
+	z-index: 1;
+}
+.description {
+	min-width: 960px;
+	text-align: center;
+	color: white;
+	font-family: sans-serif, monospace;
+	font-size: 18px;
+	font-weight: 10px;
+	word-spacing: 3px;
+	position: absolute;
+	bottom: 420px;
+	left: 17%;
+	right: 17%;
+	margin-bottom: 0;
+}
+.account {
+	margin: 0 auto;
+	padding: 10px;
+	border: 1px solid #ccc;
+	width: 960px;
+	height: 120px;
+	color: white;
+	text-align: center;
+	position: absolute;
+	bottom: 200px;
+	left: 15%;
+	right: 15%;
+}
+.account p {
+	color: #ccc;
+}
+.user {
+	border: 1px solid #ccc;
+	text-align: left;
+	color: white;
+	width: 360px;
+	padding: 8px;
+	margin: 8px 8px 11px 8px;
+	float: left;
+	font-size: 13px;
+}
+.button {
+	padding: 5px;
+	background-color: white;
+	color: black;
+	float: left;
+	width: 150px;
+	margin: 8px 8px 11px 8px;
+	padding: 8px;
+	border-radius: 9px;
+}
+.ready {
+	height: 520px; 
+	text-align: center;
+	position: relative;
+}
+.ready p, 
+.ready h2,
+.crew h2 {
+	margin-top: 70px;
+	margin-bottom: 8px;
+	font-size: 30px;
+	text-align: center;
+}
+.ready p {
+	font-size: 20px;
+}
+.ready img {
+	margin: 0 auto;
+	padding: 15px 0 0 45px;
+	float: left;
+}
+
+.list1,
+.list2,
+.list3,
+.list4 {
+	width: 40%;
+	height: 90px;
+	display: inline-block;
+	margin: 10px 2px 9px 24px;
+	position: relative;
+}
+.ready h3 {
+	display: inline;
+	float: left;
+	padding: 0 auto;
+	margin: 5px 0 0 14px;
+}
+.list1 p {
+	position: absolute;
+	font-size: 15px;
+	float: right;
+	margin-top: 0 auto;
+	padding: 0 auto;
+	bottom: 2px;
+	left: 88px;
+	text-align: left;
+}
+.policies {
+	/* 我这里的CSS在根目录下，如果CSS在style文件夹里，图片url改为(../9-10-images/图层-2.jpg) */
+	background: no-repeat url(9-10-images/图层-2.jpg); 
+	/* CSS好像不允许文件名有空格，所以图层 2.jpg识别不了*/
+	height: 800px; /* 注意这里的高度，超出图片高度会导致留白 */
+	position: relative;
+	margin: 0 auto;
+}
+.Supportive {
+	color: white;
+	position: absolute;
+	left: 15%;
+	top: 25%;
+	font-size: 38px;
+	font-weight: 5px;
+}
+.button-l,
+.button-r {
+	opacity: 0.95; /*透明度*/
+	color: white;
+	border: 1px solid #fff;
+	position: absolute;
+	padding: 10px;
+	padding-top: 23px; 
+	width: 20%;
+	text-align: center;
+	height: 70px;
+}
+.button-l {
+	left: 15%;
+	top: 60%;
+	margin-right: 15px;
+	background-color: white;
+	color: black;
+}
+.button-r {
+	left: 45%;
+	top: 60%;
+	margin-right: 15px;
+}
+.try {
+	margin-bottom: 400px;
+}
+.try div {
+	display: flex;
+	width: 32%;
+	height: 20%;
+	margin: 0 5px 20px 5px;
+	float: left;
+	position: relative;
+}
+.try h2 {
+	text-align: center;
+	padding: 10% 0 5% 0; 
+}
+.try dt {
+	font-size: 28px;
+	font-family: serif;
+	padding: 0 auto;
+	margin: 0 auto;
+	height: 100%;
+	display: block;
+	list-style: none;
+}
+.try dd {
+	display: block;
+	font-family: cursive;
+	font-size: 25px;
+	height: 210px;
+	width: 70%;
+	margin-top: 48px;
+	padding: 5px 3px 8 9px;
+	text-align: center;
+	float: left;
+	position: absolute;
+	left: 70px;
+}
+#third {
+	word-spacing: 1px;
+	letter-spacing: -0.05em;
+}
+.plan {
+	border-top: 2px solid #ccc;
+	border-bottom: 2px solid #ccc;
+	margin: 0 auto;
+	padding-bottom: 5%;
+	height: 20%;
+	position: relative;
+}
+.plan img {
+	margin: 0 auto;
+}
+.Learn,
+.Choose {
+	margin: 5% 15% 0 15%;
+	display: inline-block;
+	width: 70%;
+}
+.Learn h2,
+.Choose h2 {
+	display: inline;
+	width: 400px;
+	margin-top: 90px;
+}
+.Learn h2 {
+	float: right;
+}
+.Choose h2 {
+	float: left;
+	margin-left: 50px;
+	margin-right: 40px;
+}
+.crew {
+	height: 700px;
+	position: relative;
+	border-bottom: 2px solid #ccc;
+}
+.photos {
+	right: 100px;
+    margin: 20px 5% 10px 5%;
+    position: absolute;
+    left: 15%;
+}
+.photo1,
+.photo2,
+.photo3,
+.photo4 {
+	float: left;
+	margin: 30px 80px 40px 50px;
+    width: 300px;
+    height: 230px;
+    float: left;
+}
+.photo1 {
+    background: no-repeat url(9-10-images/Userpic1.jpg);
+    background-size: 100% 100%;
+}
+.photo1:hover {
+	background-image: url(9-10-images/greybackground.png);
+}
+.photo2 {
+    background: no-repeat url(9-10-images/Userpic2.jpg);
+    background-size: 100% 100%;
+}
+    .photo3 {
+    background: no-repeat url(9-10-images/Userpic3.jpg);
+    background-size: 100% 100%;
+}
+    .photo4 {
+    background: no-repeat url(9-10-images/Userpic4.jpg);
+    background-size: 100% 100%;
+}
+
+.contacts {
+	height: 700px;
+}
+.write {
+	width: 25%;
+	height: 70%;
+	margin: 100px 50px 100px 300px;
+	border: 1px solid #ccc;
+	float: left;
+	padding: 40px;
+}
+.E-S {
+	height: 50px;
+	width: 90%;
+	text-indent: 5px;
+	border: 1px solid #ccc;
+	margin: 10px 0 20px 0;
+	color: #ccc;
+}
+.message {
+	width: 90%;
+	height: 150px;
+	border: 1px solid #ccc;
+	margin: 10px 0 20px 0;
+	color: #ccc;
+}
+.send {
+	width: 90%;
+	height: 50px;
+	background-color: black;
+	color: white;
+	margin: 10px 0 20px 0;
+	text-align: center;
+	font-size: 25px;
+	line-height: 50px;
+}
+.info-of-contact {
+	width: 25%;
+	height: 70%;
+	margin: 100px 50px 100px 100px;
+	float: left;
+	padding: 100px 0 0 15px;
+}
+.info-of-contact h1 {
+	text-indent: 20px;
+}
+.info {
+	display: inline-block;
+	width: 80%;
+	padding: 15px;
+	margin: 10px 10px 15px 10px;
+	float: left;
+}
+footer {
+	background-color: black;
+	height: 200px;
+}
+.more {
+	width: 30%;
+	height: 90%;
+	float: left;
+	color: white;
+	font-size: 17px;
+	list-style: none;
+	padding-top: 25px;
+}
+li {
+	margin: 15px;
+	color: #ccc;
+}
