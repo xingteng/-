@@ -16,27 +16,26 @@ h1 {
 .column {
 	display: inline-block;
 	background-color: #aaa;
-	height: 100px;
+	height: 110px;
 	width: 20%;
 	text-align: center;
-
-	
-	line-height: 100px;
+	line-height: 110px;
 	border-bottom: 1px solid #fff;
 	float: left;
-
 }
 .row {
 	display: inline-block;
-
 	width: 80%;
-	height: 100px;
+	height: 110px;
 	float: right;
 	border-bottom: 1px solid #aaa;
 }
 
 .b-info {
 	font-weight:bold;
+	line-height: 100px;
+	margin-bottom: 50px;
+	padding-bottom: 50px;
 }
 .info {
 	font-weight:bold;
