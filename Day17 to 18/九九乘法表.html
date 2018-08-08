@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>17-4</title>
+</head>
+
+<body onload="a()">
+
+    <table id="table">
+    </table>
+
+    <script>
+        function a() {
+            var t = document.getElementById("table");
+            for (i = 9; i > 0; i--) {
+                var tr = document.createElement("tr")
+                for (j = 1; j < i + 1; j++) {
+                    var td = document.createElement("td");
+                    var node = document.createTextNode(j + '*' + i + '=' + j * i);
+                    td.appendChild(node);
+                    tr.appendChild(td);
+                    t.appendChild(tr);
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
