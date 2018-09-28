@@ -15,4 +15,4 @@
 
 [Day16-开始感受JS的乐趣](https://github.com/xingteng/Baidu-Web-Tech/tree/master/Day16)
 
-[Day17 to 20-如果可以重来](https://github.com/xingteng/Baidu-Web-Tech/tree/master/Day17%20to%2018)-JS基础知识继续学习
+[Day17 to 18-如果可以重来](https://github.com/xingteng/Baidu-Web-Tech/tree/master/Day17%20to%2018)-JS基础知识继续学习
