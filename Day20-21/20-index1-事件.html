@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS-事件</title>
+</head>
+
+<body>
+    <input id="name" type="text">
+    <button id="submit-btn">Submit</button>
+    <script>
+        //在HTML中增加上面的代码，然后通过JavaScript编写如下功能：
+        //当点击按钮 submit-btn 时，在console中输出 name 中的内容
+        //在输入过程中，如果按回车键，则同样执行上一条的需求
+        //在输入过程中，如果按 ESC 键，则把输入框中的内容清空
+
+        var ipt = document.getElementById('name');
+        var btn = document.getElementById('submit-btn');
+        btn.onclick = function () {
+            console.log(ipt.value)
+        };
+        ipt.onfocus = function () {
+            document.onkeydown = function (e) {
+                if (e.keyCode === 13) {
+                    //e.keyCode=13时，代表按下enter
+                    console.log(ipt.value)
+                }
+                if (e.keyCode === 27) {
+                    //e.keyCode=27时，代表按下esc
+                    ipt.value = '';
+                }
+            }
+        };
+        ipt.onblur = function () {
+            document.onkeydown = null;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>控制元素显示与隐藏</title>
+    <style>
+        select {
+            display: none;
+        }
+        .show {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <label>
+        <input id="school" name="status" type="radio"> School
+    </label>
+    <label>
+        <input id="company" name="status" type="radio"> Company
+    </label>
+
+    <select id="school-select">
+        <option>北京邮电大学</option>
+        <option>黑龙江大学</option>
+        <option>华中科技大学</option>
+    </select>
+
+    <select id="company-select">
+        <option>百度</option>
+        <option>爱奇艺</option>
+    </select>
+
+    <script>
+        //当用户选择了 School 的单选框时，显示 School 的下拉选项，隐藏 Company 的下拉选项
+        //当用户选择了 School 的单选框时，显示 Company 的下拉选项，隐藏 School 的下拉选项
+        // 选择school
+        document.getElementById("school").onclick = function () {
+            document.getElementById("school-select").className = "show";
+            //方法二：把上行代码全部替换为注释内的代码，即通过修改display的属性值来修改样式
+            //document.getElementById("school-select").style.display = "block";
+            document.getElementById("company-select").className = " ";
+            //document.getElementById("company-select").style.display = "none";
+        }
+        // 选择company
+        document.getElementById("company").onclick = function () {
+            document.getElementById("school-select").className = " ";
+            //方法二：把上行代码全部替换为注释内的代码，即通过修改display的属性值来修改样式
+            //document.getElementById("school-select").style.display = "none";
+            document.getElementById("company-select").className = "show";
+            //document.getElementById("company-select").style.display = "block";
+        }
+    </script>
+</body>
+
+</html>
