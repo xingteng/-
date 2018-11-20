@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>数组实现队列</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <input id="queue-input" type="text">
+    <p id="queue-cont">队列内容：apple-&gt;pear</p>
+    <button id="in-btn">入队</button>
+    <button id="out-btn">出队</button>
+    <button id="font-btn">打印队头元素内容</button>
+    <button id="empty-btn">判断队列是否为空</button>
+
+    <script>
+        var queue = ["apple", "pear"];
+        //1队列的相关入队、出队、获取队头、判空的操作； //2队头对应数组中最后一个元素；
+        //3入队和出队操作后，需要在 id 为 queue-cont 的 p 标签中更新显示队列中的内容，
+        //队头在最右侧，中间用 -> 连接（练习使用数组的join方法）；
+        var input = document.querySelector("#queue-input");
+        var inbtn = document.querySelector("#in-btn");
+        var outbtn = document.querySelector("#out-btn");
+        var fontbtn = document.querySelector("#font-btn");
+        var emptybtn = document.querySelector("#empty-btn");
+        var p = document.querySelector("#queue-cont");
+        //入队
+        inbtn.onclick = function () {
+            queue.unshift(input.value);
+            p.innerHTML = '队列内容：' + queue.join('-&gt;');
+        };
+        //出队
+        outbtn.onclick = function () {
+            queue.pop(input.value);
+            p.innerHTML = '队列内容：' + queue.join('-&gt;');
+        };
+        //打印队头元素内容，队头对应数组中最后一个元素
+        fontbtn.onclick = function () {
+            var head = queue[queue.length - 1];
+            p.innerHTML = '队列内容：' + queue.join('-&gt;') + " " + '队头元素内容：' + head;;
+            console.log('队头元素内容：' + head);
+        };
+        //判断队列是否为空
+        emptybtn.onclick = function () {
+            if (queue.length == 0) {
+                alert("队列为空");
+            } else {
+                alert("队列不为空");
+            };
+        };
+    </script>
+</body>
+
+</html>
